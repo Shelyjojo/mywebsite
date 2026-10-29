@@ -821,33 +821,44 @@ object-position: center 30%;
             .quote-section blockquote::before { font-size: 3.5rem; left: -0.5rem; }
             .back-to-top { bottom: 1rem; right: 1rem; }
  
-.whatsapp-contact {
-    display: block;
-    width: fit-content;
-    max-width: 90%;
-    margin: 2rem auto;
-    padding: 1rem 1.5rem;
-    background: #25D366;
-    color: white;
+
+a.whatsapp-contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: min(100%, 420px);
+    box-sizing: border-box;
+    margin: 24px auto;
+    padding: 16px 24px;
+    background-color: #25D366;
+    color: #ffffff;
     text-decoration: none;
+    font-size: 16px;
     font-weight: 600;
     border-radius: 30px;
     text-align: center;
 }
+  
 
-.whatsapp-floating {
+
+a.whatsapp-floating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: fixed;
-    bottom: 85px;
     right: 20px;
-    z-index: 9999;
-    background: #25D366;
-    color: white;
-    padding: 14px 18px;
-    border-radius: 30px;
+    bottom: 90px;
+    z-index: 99999;
+    padding: 14px 20px;
+    background-color: #25D366;
+    color: #ffffff;
     text-decoration: none;
+    font-size: 14px;
     font-weight: 600;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    border-radius: 30px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
 }
+  
 
 .whatsapp-contact:hover,
 .whatsapp-floating:hover {
