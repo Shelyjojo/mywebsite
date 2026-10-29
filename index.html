@@ -820,7 +820,40 @@ object-position: center 30%;
             .quote-section blockquote { font-size: 1.4rem; }
             .quote-section blockquote::before { font-size: 3.5rem; left: -0.5rem; }
             .back-to-top { bottom: 1rem; right: 1rem; }
-        }
+ 
+.whatsapp-contact {
+    display: block;
+    width: fit-content;
+    max-width: 90%;
+    margin: 2rem auto;
+    padding: 1rem 1.5rem;
+    background: #25D366;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.whatsapp-floating {
+    position: fixed;
+    bottom: 85px;
+    right: 20px;
+    z-index: 9999;
+    background: #25D366;
+    color: white;
+    padding: 14px 18px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.whatsapp-contact:hover,
+.whatsapp-floating:hover {
+    background: #1DA851;
+}
+         }
     </style>
 </head>
 <body>
@@ -1096,6 +1129,14 @@ object-position: center 30%;
             </div>
             <button type="submit">Send Message</button>
         </form>
+   
+<a href="https://wa.me/254741750966?text=Hello%20Joan%21%20I%20visited%20your%20website."
+   target="_blank"
+   rel="noopener noreferrer"
+   class="whatsapp-contact">
+    <span>Chat with me on WhatsApp</span>
+</a>
+  
     </section>
 
     <!-- Footer -->
@@ -1103,6 +1144,14 @@ object-position: center 30%;
         <p>&copy; 2026 Joan &middot; Crafted with <span class="heart">&hearts;</span> in black</p>
     </footer>
 
+<a href="https://wa.me/254741750966?text=Hello%20Joan%21%20I%20visited%20your%20website."
+   class="whatsapp-floating"
+   target="_blank"
+   rel="noopener noreferrer"
+   aria-label="Chat with Joan on WhatsApp">
+    <span>WhatsApp</span>
+</a>
+  
     <!-- Back to Top -->
     <div class="back-to-top" id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">
         &#9650;
