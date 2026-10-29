@@ -990,6 +990,48 @@ object-position: center 30%;
                 <img src="photo_2025-12-15_16-10-25 (2).jpg" alt="Gallery image 4">
                 <div class="overlay"><span>Still Life</span></div>
             </div>
+       
+<div class="gallery-item reveal" onclick="openLightbox(4)">
+    <img src="gallery-01.jpg" alt="Gallery image 5" loading="lazy">
+    <div class="overlay"><span>Gallery 5</span></div>
+</div>
+<div class="gallery-item reveal" onclick="openLightbox(5)">
+    <img src="gallery-02.jpg" alt="Gallery image 6" loading="lazy">
+    <div class="overlay"><span>Gallery 6</span></div>
+</div>
+<div class="gallery-item reveal" onclick="openLightbox(6)">
+    <img src="gallery-03.jpg" alt="Gallery image 7" loading="lazy">
+    <div class="overlay"><span>Gallery 7</span></div>
+</div>
+<div class="gallery-item reveal" onclick="openLightbox(7)">
+    <img src="gallery-04.jpg" alt="Gallery image 8" loading="lazy">
+    <div class="overlay"><span>Gallery 8</span></div>
+</div>
+<div class="gallery-item reveal" onclick="openLightbox(8)">
+    <img src="gallery-05.jpg" alt="Gallery image 9" loading="lazy">
+    <div class="overlay"><span>Gallery 9</span></div>
+</div>
+<div class="gallery-item reveal" onclick="openLightbox(9)">
+    <img src="gallery-06.jpg" alt="Gallery image 10" loading="lazy">
+    <div class="overlay"><span>Gallery 10</span></div>
+</div>
+<div class="gallery-item reveal" onclick="openLightbox(10)">
+    <img src="allery-07.jpg" alt="Gallery image 11" loading="lazy">
+    <div class="overlay"><span>Gallery 11</span></div>
+</div>
+<div class="gallery-item reveal" onclick="openLightbox(11)">
+    <img src="gallery-08.jpg" alt="Gallery image 12" loading="lazy">
+    <div class="overlay"><span>Gallery 12</span></div>
+</div>
+<div class="gallery-item reveal" onclick="openLightbox(12)">
+    <img src="gallery-09.jpg" alt="Gallery image 13" loading="lazy">
+    <div class="overlay"><span>Gallery 13</span></div>
+</div>
+<div class="gallery-item reveal" onclick="openLightbox(13)">
+    <img src="gallery-10.jpg" alt="Gallery image 14" loading="lazy">
+    <div class="overlay"><span>Gallery 14</span></div>
+</div>
+  
         </div>
     </section>
 
@@ -1335,12 +1377,24 @@ object-position: center 30%;
         });
 
         // ===== Lightbox =====
-        const galleryImages = [
-            'photo_2025-12-15_16-10-23.jpg',
-            'photo_2025-12-15_16-10-24.jpg',
-            'photo_2025-12-15_16-10-25.jpg',
-            'photo_2025-12-15_16-10-25 (2).jpg'
-        ];
+        
+const galleryImages = [
+    'photo_2025-12-15_16-10-23.jpg',
+    'photo_2025-12-15_16-10-24.jpg',
+    'photo_2025-12-15_16-10-25.jpg',
+    'photo_2025-12-15_16-10-25 (2).jpg',
+    'gallery-01.jpg',
+    'gallery-02.jpg',
+    'gallery-03.jpg',
+    'gallery-04.jpg',
+    'gallery-05.jpg',
+    'gallery-06.jpg',
+    'allery-07.jpg',
+    'gallery-08.jpg',
+    'gallery-09.jpg',
+    'gallery-10.jpg'
+];
+  
         let currentIdx = 0;
 
         function openLightbox(idx) {
