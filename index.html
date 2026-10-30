@@ -315,11 +315,13 @@ object-position: center 30%;
         @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
 
         /* ===== Scroll Reveal ===== */
-        .reveal {
-            opacity: 0;
-            transform: translateY(40px);
-            transition: opacity 0.8s ease, transform 0.8s ease;
-        }
+        
+.reveal {
+    opacity: 0;
+    transform: translateY(25px);
+    transition: opacity 1.1s ease-out, transform 1.1s ease-out;
+}
+
         .reveal.visible {
             opacity: 1;
             transform: translateY(0);
@@ -525,11 +527,14 @@ object-position: center 30%;
             border: 1px solid #141414;
             transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
         }
-        .gallery-item:hover {
-            transform: translateY(-6px);
-            border-color: #333;
-            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
-        }
+       
+.gallery-item:hover {
+    transform: translateY(-6px);
+    border-color: #D6B77F;
+    box-shadow: 0 0 22px rgba(214, 183, 127, 0.25),
+                0 15px 40px rgba(0, 0, 0, 0.6);
+}
+ 
         .gallery-item img {
             width: 100%; height: 100%;
             object-fit: contain;
@@ -821,7 +826,7 @@ object-position: center 30%;
             .quote-section blockquote::before { font-size: 3.5rem; left: -0.5rem; }
             .back-to-top { bottom: 1rem; right: 1rem; }
  
-
+}
 a.whatsapp-contact {
     display: flex;
     align-items: center;
@@ -864,7 +869,71 @@ a.whatsapp-floating {
 .whatsapp-floating:hover {
     background: #1DA851;
 }
-    </style>
+   
+/* Elegant graduation gallery heading */
+#gallery .section-title {
+    color: #D6B77F;
+}
+
+#gallery .section-subtitle {
+    color: #BDB4A7;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.8;
+}
+  
+       
+/* Elegant gallery storytelling quotes */
+
+
+#gallery .gallery-quote {
+
+    grid-column: 1 / -1;
+    width: 100%;
+    max-width: none;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 55px 20px;
+    margin: 15px 0;
+    align-self: center;
+}
+
+
+#gallery .gallery-quote-label {
+    display: block;
+    color: #D6B77F;
+    font-size: 12px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+#gallery .gallery-quote p {
+    color: #F5E9D8;
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.3rem, 3vw, 2rem);
+    font-style: italic;
+    line-height: 1.7;
+}
+     
+@media (prefers-reduced-motion: reduce) {
+    .reveal,
+    .reveal.visible {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+
+    .gallery-item,
+    .gallery-item:hover,
+    .gallery-item img,
+    .gallery-item:hover img {
+        transform: none;
+        transition: none;
+    }
+}
+ 
+            </style>
 </head>
 <body>
     <!-- Particle Canvas Background -->
@@ -1013,8 +1082,12 @@ a.whatsapp-floating {
 
     <!-- Gallery -->
     <section class="gallery-section" id="gallery">
-        <h2 class="section-title reveal">Gallery</h2>
-        <p class="section-subtitle reveal reveal-delay-1">Moments captured in shadow and light</p>
+      
+<h2 class="section-title reveal">The Art of Becoming</h2>
+
+       
+<p class="section-subtitle reveal reveal-delay-1">A journey of courage, growth, and dreams becoming reality. Every photograph holds a moment. Every moment tells a story.</p>
+
         <div class="section-divider reveal reveal-delay-1"></div>
         <div class="gallery-grid">
             <div class="gallery-item reveal reveal-delay-1" onclick="openLightbox(0)">
@@ -1041,6 +1114,13 @@ a.whatsapp-floating {
 <div class="gallery-item reveal" onclick="openLightbox(5)">
     <img src="gallery-02.jpg" alt="Gallery image 6" loading="lazy">
     <div class="overlay"><span>Gallery 6</span></div>
+
+</div>
+
+<div class="gallery-quote">
+    <span class="gallery-quote-label">A MOMENT OF BLISS</span>
+    <p>"My God, a moment of bliss. Why, isn't that enough for a whole lifetime?"</p>
+  
 </div>
 <div class="gallery-item reveal" onclick="openLightbox(6)">
     <img src="gallery-03.jpg" alt="Gallery image 7" loading="lazy">
@@ -1049,14 +1129,25 @@ a.whatsapp-floating {
 <div class="gallery-item reveal" onclick="openLightbox(7)">
     <img src="gallery-04.jpg" alt="Gallery image 8" loading="lazy">
     <div class="overlay"><span>Gallery 8</span></div>
-</div>
-<div class="gallery-item reveal" onclick="openLightbox(8)">
+    </div>
+
+
+
+
+  
+            <div class="gallery-item reveal" onclick="openLightbox(8)">
     <img src="gallery-05.jpg" alt="Gallery image 9" loading="lazy">
     <div class="overlay"><span>Gallery 9</span></div>
 </div>
 <div class="gallery-item reveal" onclick="openLightbox(9)">
     <img src="gallery-06.jpg" alt="Gallery image 10" loading="lazy">
     <div class="overlay"><span>Gallery 10</span></div>
+  </div> 
+    <div class="gallery-quote">
+    <span class="gallery-quote-label">CHAPTER I — THE JOURNEY</span>
+    
+<p>I love mankind, he said, "but I find to my amazement that the more I love mankind as a whole, the less I love man in particular."</p>
+  
 </div>
 <div class="gallery-item reveal" onclick="openLightbox(10)">
     <img src="allery-07.jpg" alt="Gallery image 11" loading="lazy">
@@ -1076,6 +1167,12 @@ a.whatsapp-floating {
 </div>
   
         </div>
+        
+<div class="gallery-quote">
+    <span class="gallery-quote-label">CHAPTER II — THE TRIUMPH</span>
+    <p>"Behind this smile is a story of courage, patience, and becoming."</p>
+</div>
+
     </section>
 
     <!-- Lightbox -->
