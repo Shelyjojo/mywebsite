@@ -878,6 +878,32 @@ a.whatsapp-floating {
     line-height: 1.8;
 }
   
+       
+/* Elegant gallery storytelling quotes */
+#gallery .gallery-quote {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 55px 20px;
+    margin: 15px auto;
+    max-width: 750px;
+}
+
+#gallery .gallery-quote-label {
+    display: block;
+    color: #D6B77F;
+    font-size: 12px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+#gallery .gallery-quote p {
+    color: #F5E9D8;
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.3rem, 3vw, 2rem);
+    font-style: italic;
+    line-height: 1.7;
+}
+      
             </style>
 </head>
 <body>
@@ -1068,7 +1094,13 @@ a.whatsapp-floating {
     <img src="gallery-04.jpg" alt="Gallery image 8" loading="lazy">
     <div class="overlay"><span>Gallery 8</span></div>
 </div>
-<div class="gallery-item reveal" onclick="openLightbox(8)">
+
+<div class="gallery-quote">
+    <span class="gallery-quote-label">CHAPTER I — THE JOURNEY</span>
+    <p>"Every step, every struggle, every silent prayer led me here."</p>
+</div>
+  
+            <div class="gallery-item reveal" onclick="openLightbox(8)">
     <img src="gallery-05.jpg" alt="Gallery image 9" loading="lazy">
     <div class="overlay"><span>Gallery 9</span></div>
 </div>
