@@ -880,13 +880,18 @@ a.whatsapp-floating {
   
        
 /* Elegant gallery storytelling quotes */
-#gallery .gallery-quote {
+
+#gallery .gallery-grid > .gallery-quote {
     grid-column: 1 / -1;
+    width: 100%;
+    max-width: none;
+    box-sizing: border-box;
     text-align: center;
     padding: 55px 20px;
-    margin: 15px auto;
-    max-width: 750px;
+    margin: 15px 0;
+    align-self: center;
 }
+
 
 #gallery .gallery-quote-label {
     display: block;
